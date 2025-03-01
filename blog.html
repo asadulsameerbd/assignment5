@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font link up  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+    </style>
+    <title>Second Html page</title>
+</head>
+
+<body class="poppins-font">
+    <!-- header Section -->
+    <header class="max-w-[1500px] mx-auto shadow-black-100 shadow-sm bg-white rounded-lg h-16 items-center">
+        <nav class="flex justify-between items-center my-2 py-2">
+            <!-- Logo -->
+            <div class="flex items-center px-5">
+                <div>
+                    <img class="w-10" src="assets/logo.png" alt="">
+                </div>
+                <p class="font-sans text-xl px-3 text-gray-600">Dev<b class="text-black">Board</b></p>
+            </div>
+            <!-- back button -->
+            <div>
+                <button id="btn-back" class="btn btn-primary">Back to Home</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Accordion Section -->
+    <main class="max-w-[1500px] mx-auto mt-10">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 p-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm poppins-font">There are some way to select an element in the DOM they are ,
+                getElementById() uses for select an id selector , getElementsByClassNames() uses for an Class Selector,
+                querySelector() uses for a single css element but it support any type of selector in css also
+                querySelectorAll() uses for multiple element select in at a time .</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 p-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-sm">innerHTML uses for add a new html content with tag, innerText return text only inside the tag,but it does no show any hidden content like display:none , innerContent return all kinds of (Text ,Tag , content )etc . It also returns visible or invisible content inside the text.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 p-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">ইভেন্ট ডেলিগেশন হলো একটি টেকনিক যেখানে আমরা প্রতিটি চাইল্ড এলিমেন্টের জন্য আলাদা ইভেন্ট লিসেনার না দিয়ে, একটি প্যারেন্ট এলিমেন্টের ওপর ইভেন্ট লিসেনার যোগ করি
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 p-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">Event Bubbling হলো একটি প্রক্রিয়া যেখানে কোনো চাইল্ড এলিমেন্টে ইভেন্ট ঘটালে , সেটি তার প্যারেন্ট, গ্র্যান্ডপ্যারেন্ট হয়ে উপরের দিকে ছড়িয়ে যায়  যতক্ষণ না লাষ্ট এলিমেন্টে না পৌঁছে ।
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 p-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm"> For Create any element i will use createElement() method , For add any element then i will use append() method and For remove any element then i will use remove() method
+            </div>
+        </div>
+    </main>
+
+<script src="js/page2.js"></script>
+</body>
+</html>
