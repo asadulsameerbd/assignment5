@@ -39,12 +39,16 @@ for (let card of cards) {
 
         // Real time 
 
-        function currentime() {
-            let times = new Date();
-            let time = times.toLocaleDateString();
-            return time;
-        }
-        const realtime = currentime();
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+        let ampm = hours >=12 ? "PM" : "AM";
+        hours = hours % 12 || 12;
+        minutes = minutes<10 ? "0"+minutes : minutes;
+        seconds = seconds <10 ? "0" + seconds : seconds;
+        let currentime = `${hours}:${minutes}:${seconds}: ${ampm}`;
+        const realtime =currentime;
 
         //    Activity Message Added 
         let titles = card.querySelector('.title');
@@ -67,9 +71,18 @@ for (let card of cards) {
         // After All button clicked 
 
         allbtnclicked.push(event.target);
-        if (allbtnclicked.length === 6){
+        if (allbtnclicked.length === 6) {
             alert("Congratulation You Have Completed All The Current Task")
         }
 
     })
 }
+
+
+// To Change The Date of the current date section 
+
+let today = new Date();
+let date = today.toDateString();
+// let month = today.getMonth() + 1;
+// let Year = today.getFullYear();
+document.querySelector('.Today').innerText = ` ${date}`;
