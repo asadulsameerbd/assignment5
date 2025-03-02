@@ -19,11 +19,6 @@
       .poppins-font {
         font-family: "Poppins", sans-serif;
         font-style: normal;
-
-        .completed-btn:disabled{
-            color: gray;
-            cursor: not-allowed;
-        }
       }
     </style>
     <title>Document</title>
@@ -47,7 +42,7 @@
                 <div>
                     <img class="w-5" src="assets/checkbox.png" alt="">
                 </div>
-                <p class="font-bold">23</p>
+                <p id="countnumber" class="font-bold">23</p>
                 <!-- theme button -->
                 <button>
                     <img class="themebtn w-7 cursor-pointer"  src="assets/theme-btn.png" alt="">
@@ -72,7 +67,7 @@
                     </div>
                     <div class="mx-5">
                         <p class="font-sans text-gray-600">Task Assiged</p>
-                        <b>6</b>
+                        <strong><p id="task-assigned">6</p></strong>
                     </div>
                 </div>
                 <!-- Discover something today -->
@@ -100,10 +95,10 @@
 
             <div class="grid grid-rows-2 grid-cols-3 gap-4 mx-5">
                  <!-- card 1 -->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class="cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2 py-2">Shop Ease</p>
-                     <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+                     <h2 class="title text-xl font-bold">Fix Mobile Button Issue</h2>
                      <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
@@ -112,16 +107,16 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="completed-btn btn btn-primary">Completed</button>
+                            <button class="btncompleted completed-btn btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
                  <!-- card 2 -->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class=" cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2 py-2">Soft Pay</p>
-                     <h2 class="text-xl font-bold">Add pay Success Modal</h2>
-                     <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                     <h2 class="title text-xl font-bold">Add pay Success Modal</h2>
+                     <p class=" text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
                         <div>
@@ -129,15 +124,15 @@
                             <p>25 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btncompleted btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
                  <!-- card 3 -->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class=" cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2  py-2">Meta</p>
-                     <h2 class="text-2xl font-bold">Add New Reaction</h2>
+                     <h2 class="title text-2xl font-bold">Add New Reaction</h2>
                      <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
@@ -146,15 +141,15 @@
                             <p>31 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btncompleted btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
                  <!-- card 4 -->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class="cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2 py-2">Programming Hero</p>
-                     <h2 class="text-xl font-bold">Fix Video Loading issue</h2>
+                     <h2 class="title text-xl font-bold">Fix Video Loading issue</h2>
                      <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
@@ -163,15 +158,15 @@
                             <p>21 March, 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btncompleted btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
                  <!-- card 5-->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class="cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2 py-2">Google LLC</p>
-                     <h2 class="text-xl font-bold">Integrate Ai search</h2>
+                     <h2 class="title text-xl font-bold">Integrate Ai search</h2>
                      <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
@@ -180,15 +175,15 @@
                             <p>1 April 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btncompleted btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
                  <!-- card 6 -->
-                  <div class="bg-[#F4F7FF] shadow-sm">
+                  <div class="cards bg-[#F4F7FF] shadow-sm">
                     <div class="p-5">
                         <p class="pl-2 py-2">Polygon Tech</p>
-                     <h2 class="text-xl font-bold">Review Ami provashi site</h2>
+                     <h2 class="title text-xl font-bold">Review Ami provashi site</h2>
                      <p class="text-gray-500 pl-2">A card component is a figure, a body part and inside body there are title and action parts</p>
                     </div>
                      <div class="flex justify-between p-5">
@@ -197,7 +192,7 @@
                             <p>5May 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btncompleted btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
@@ -216,11 +211,11 @@
                 </div>
                 <!-- Clear button -->
                 <div class="flex  p-3 justify-center">
-                    <button class="btn btn-primary">Clear History</button>
+                    <button class="clearhistory btn btn-primary">Clear History</button>
                 </div>
             </div>
             <!-- Activity feedback section -->
-            <div class="row-span-5">
+            <div class="message row-span-5">
 
             </div>
         </section>
