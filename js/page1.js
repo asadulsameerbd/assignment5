@@ -5,7 +5,7 @@ const discoverToGo = document.getElementById('discover')
     })
 
 //  Add toggle button 
-let color = ['#ff7675', '#e84393', '#ffeaa7'];
+let color = ['#ff7675', '#e84393', '#ffeaa7','#ff9f43', '#5f27cd','#2e86de'];
 let indexnum = 0
 let themeBtn = document.querySelector(".themebtn")
     .addEventListener('click', function () {
@@ -47,7 +47,7 @@ for (let card of cards) {
         hours = hours % 12 || 12;
         minutes = minutes<10 ? "0"+minutes : minutes;
         seconds = seconds <10 ? "0" + seconds : seconds;
-        let currentime = `${hours}:${minutes}:${seconds}: ${ampm}`;
+        let currentime = `${hours}:${minutes}:${seconds} ${ampm}`;
         const realtime =currentime;
 
         //    Activity Message Added 
