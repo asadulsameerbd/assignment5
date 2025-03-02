@@ -19,16 +19,21 @@
       .poppins-font {
         font-family: "Poppins", sans-serif;
         font-style: normal;
+
+        .completed-btn:disabled{
+            color: gray;
+            cursor: not-allowed;
+        }
       }
     </style>
     <title>Document</title>
 </head>
 
-<body class="bg-[#F4F7FF] poppins-font">
+<body id="body" class="bg-[#F4F7FF] poppins-font m-0 p-0 ">
     <!-- Header Section Start from here -->
 
-    <header class="max-w-[1500px] mx-auto shadow-black-100 shadow-sm bg-white rounded-lg h-16 items-center">
-        <nav class="flex justify-between items-center my-2 py-2">
+    <header class="max-w-[1500px] mx-auto shadow-black-100 shadow-sm bg-white rounded-lg h-16 items-center  py-2">
+        <nav class="flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center px-5">
                 <div>
@@ -45,7 +50,7 @@
                 <p class="font-bold">23</p>
                 <!-- theme button -->
                 <button>
-                    <img class="w-7" src="assets/theme-btn.png" alt="">
+                    <img class="themebtn w-7 cursor-pointer"  src="assets/theme-btn.png" alt="">
                 </button>
             </div>
 
@@ -54,7 +59,7 @@
 
     <!-- Main Section start from here -->
 
-    <main class="max-w-[1500px] mx-auto grid grid-cols-4 my-3 bg-white">
+    <main class="max-w-[1500px] h-[825px] mx-auto grid grid-cols-4 my-3 bg-white rounded-lg">
         <!-- Body Section -->
         <section class="col-span-3">
 
@@ -75,7 +80,7 @@
                     <div class="flex justify-start">
                         <img class="w-20" src="assets/board.png" alt="">
                     </div>
-                    <p class="text-white text-2xl">Discover Something New Today!</p>
+                    <p id="discover" class="text-white text-2xl px-10 hover:cursor-pointer ">Discover Something New Today!</p>
                 </div>
                 <!-- Date -->
                 <div class="flex justify-center items-center p-5 bg-[#F4F7FF] m-5">
@@ -107,7 +112,7 @@
                             <p>21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="completed-btn btn btn-primary">Completed</button>
                         </div>
                      </div>
                   </div>
@@ -220,6 +225,8 @@
             </div>
         </section>
     </main>
-</body>
 
+
+    <script src="js/page1.js"></script>
+</body>
 </html>
