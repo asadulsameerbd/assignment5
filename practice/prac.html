@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font  link up -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+    <title>Document</title>
+</head>
+
+<body id="body" class="poppins-font m-0 pt-5 pb-5 ">
+    <!-- Header Section Start from here -->
+
+    <header class="max-w-[1500px] mx-auto shadow-black-100 shadow-sm bg-[#e7e4e6] rounded-lg h-20 items-center  py-4">
+        <nav class="flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center px-5">
+                <div>
+                    <img class="w-10" src="../assets/logo.png" alt="">
+                </div>
+                <p class="font-sans text-xl px-3 text-gray-600">Dev<b class="text-black">Board</b></p>
+            </div>
+
+            <!-- icon -->
+            <div class="flex items-center gap-5 mx-5">
+                <div>
+                    <img class="w-5" src="../assets/checkbox.png" alt="">
+                </div>
+                <p id="countnumber" class="font-bold">23</p>
+                <!-- theme button -->
+                <button>
+                    <img class="themebtn w-7 cursor-pointer"  src="assets/theme-btn.png" alt="">
+                    <button class="btn-top btn btn-outline btn-primary">Color Theme</button>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Main Section start from here -->
+
+    <main class="max-w-[1500px] h-[810px] mx-auto grid grid-cols-4 my-3 shadow-2x rounded-lg bg-[#4b6584] ">
+        <!-- Body Section -->
+        <section class="col-span-3">
+
+            <!-- First line  -->
+            <div class="grid grid-rows-1 grid-cols-4 mt-5" >
+                <!-- task assign -->
+                <div class="flex justify-center items-center p-10 bg-[#e7e4e6] m-5 rounded-lg">
+                    <div>
+                        <img class="w-5" src="../assets/checkbox.png" alt="">
+                    </div>
+                    <div class="mx-5">
+                        <p class="font-sans text-gray-600">Task Assiged</p>
+                        <strong><p id="task-assigned">6</p></strong>
+                    </div>
+                </div>
+                <!-- Discover something today -->
+                <div class="flex justify-center items-center p-10 col-span-2 bg-gradient-to-r from-[#4A68FC] to-[#8D9EF8]  rounded-2xl gap-3 m-5">
+                    <div class="flex justify-start">
+                        <img class="w-20" src="../assets/board.png" alt="">
+                    </div>
+                    <p id="discover" class="text-white text-2xl px-10 hover:cursor-pointer ">Discover Something New Today!</p>
+                </div>
+                <!-- Date -->
+                <div class="flex justify-center items-center p-5 bg-[#e7e4e6] m-5 rounded-lg">
+                    <div>
+                        <img class="w-5" src="../assets/calender.png" alt="">
+                    </div>
+                    <div class="mx-5">
+                        <p class="font-sans text-gray-600">Date</p>
+                        <p class="text-md" id="Today"></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Mid Content  -->
+
+            <div class="grid grid-rows-2 grid-cols-3 gap-4 mx-5 mt-2">
+                 <!-- card 1 -->
+                  <div class="cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2 py-1">Shop Ease</p>
+                     <h2 class="title text-xl font-bold">Fix Mobile Button Issue</h2>
+                     <p class="text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted completed-btn btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- card 2 -->
+                  <div class=" cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2 py-1 ">Soft Pay</p>
+                     <h2 class="title text-xl font-bold">Add pay Success Modal</h2>
+                     <p class=" text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>25 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- card 3 -->
+                  <div class=" cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2  py-1 ">Meta</p>
+                     <h2 class="title text-xl font-bold">Add New Reaction</h2>
+                     <p class="text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>31 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- card 4 -->
+                  <div class="cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2 py-1 ">Programming Hero</p>
+                     <h2 class="title text-xl font-bold">Fix Video Loading issue</h2>
+                     <p class="text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>21 March, 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- card 5-->
+                  <div class="cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2 py-1">Google LLC</p>
+                     <h2 class="title text-xl font-bold">Integrate Ai search</h2>
+                     <p class="text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>1 April 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+                 <!-- card 6 -->
+                  <div class="cards bg-[#e7e4e6] shadow-sm rounded-lg m-3">
+                    <div class="p-5">
+                        <p class="pl-2 py-1">Polygon Tech</p>
+                     <h2 class="title text-xl font-bold">Review Ami provashi site</h2>
+                     <p class="text-gray-500 pl-2 p-2">A card component is a figure, a body part and inside body there are title and action parts</p>
+                    </div>
+                     <div class="flex justify-between pl-5 pr-5 pb-4">
+                        <div>
+                            <p>Deadline</p>
+                            <p>5May 2025</p>
+                        </div>
+                        <div>
+                            <button class="btncompleted btn btn-primary">Completed</button>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Activity Log Section -->
+        <section class="grid grid-rows-5 shadow-black-100 shadow-md rounded-lg  gap-2 m-5 mb-16 mt-12">
+            <!-- activity section -->
+            <div class="row-span-1 border-b-1 border-gray-300 border-dashed bg-[#e7e4e6] rounded-sm">
+                <div class="flex p-3 justify-center gap-3 items-center">
+                    <div>
+                        <img class="w-4" src="assets/activity.png" alt="">
+                    </div>
+                    <p>Activity Log</p>
+                </div>
+                <!-- Clear button -->
+                <div class="flex  p-3 justify-center ">
+                    <button class="clearhistory btn btn-primary">Clear History</button>
+                </div>
+            </div> 
+            <!-- Activity feedback section -->
+            <div class="message row-span-4  bg-[#e7e4e6] rounded-sm mt-7">
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="prac.js"></script>
+</body>
+</html>
